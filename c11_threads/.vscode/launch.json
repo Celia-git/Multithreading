@@ -1,0 +1,13 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+      {
+        "name": "Debug",
+        "type": "cppdbg", // Or "python", "node", etc.
+        "request": "launch",
+        "program": "${workspaceFolder}/a.out", // Or your program name
+        "args": [], // Add your arguments here
+        "cwd": "${workspaceFolder}"
+      }
+    ]
+  }
