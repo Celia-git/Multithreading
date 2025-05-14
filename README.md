@@ -11,7 +11,7 @@ This project explores different approaches to parallel programming by implementi
 
 ### c11\_threads
 
-The `c11_threads` directory contains a solution using the C11 threads library. This approach involves explicit thread management, including thread creation, synchronization, and termination.  Key aspects of this implementation may include:
+The `c11_threads` directory contains a solution using the C11 threads library. This approach involves explicit thread management, including thread creation, synchronization, and termination.  Key aspects of this implementation:
 
 * Thread creation and management using `thrd_create`, `thrd_join`, and related functions.
 * Synchronization mechanisms such as mutexes (`mtx_t`) and condition variables (`cnd_t`) to protect shared resources and coordinate thread execution.
@@ -19,9 +19,10 @@ The `c11_threads` directory contains a solution using the C11 threads library. T
 
 ### open\_mp
 
-The `open_mp` directory contains a solution using OpenMP.  OpenMP provides a higher-level abstraction for parallel programming, allowing for easier parallelization of code regions, loops, and other constructs. Key aspects of this implementation may include:
+The `open_mp` directory contains a solution using OpenMP.  OpenMP provides a higher-level abstraction for parallel programming, allowing for easier parallelization of code regions, loops, and other constructs. Key aspects of this implementation include:
 
 * Compiler directives (pragmas) to specify parallel regions, work-sharing constructs (e.g., `for`, `sections`), and synchronization.
+* Dynamic scheduling of threads to promote efficient use of resources.
 * Runtime library functions for controlling the number of threads and other aspects of OpenMP execution.
 * Implicit thread management by the OpenMP runtime.
 
